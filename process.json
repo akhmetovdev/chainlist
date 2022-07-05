@@ -3,7 +3,7 @@
     {
       "name": "chainlist",
       "script": "./node_modules/next/dist/bin/next",
-      "args": "start",
+      "args": "start --hostname 0.0.0.0",
       "instances": 1,
       "exec_mode": "fork",
       "log_file": "/opt/logs/chainlist.log",
