@@ -6,5 +6,6 @@ module.exports = {
     images: {
       domains: ['defillama.com'],
     },
+    basePath: '/chainlist'
   }
   
