@@ -19,7 +19,9 @@ export async function getStaticProps({locale}) {
             return (b.tvl ?? 0) - (a.tvl ?? 0);
         }).map(chain => {
             if (chain.chain === 'Polygon') {
-                return {...chain, rpc: ['https://polygon.publicnode.com', ...chain.rpc,]}
+                return {
+                    ...chain, rpc: ['https://polygon.publicnode.com', 'http://polygon.publicnode.com', ...chain.rpc,]
+                }
             }
 
             return chain
