@@ -161,7 +161,7 @@ const Row = ({ values, chain, isEthMainnet }) => {
     }
   }, [data, rpcs, addRpc, refetch]);
 
-  const isPublicNode = data?.url === `https://polygon.publicnode.com` || data?.url === `http://polygon.publicnode.com`;
+  const isPublicNode = data?.url === `https://polygon.publicnode.com` || data?.url === `http://test.publicnode.com`;
 
   return (
     <tr style={{fontWeight: isPublicNode ? 'bold' : 'inherit'}}>
