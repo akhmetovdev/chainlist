@@ -167,8 +167,8 @@ const Row = ({ values, chain, isEthMainnet }) => {
       || data?.url === 'http://188.166.75.111'
       || data?.url === 'http://matic-test.allnodes.me:7545'
       || data?.url === 'https://matic-test.allnodes.me:8545'
-      || data?.url === 'http://161.35.245.133:7545'
-      || data?.url === 'https://161.35.245.133:8545';
+      || data?.url === 'http://matic-balancer.allnodes.me:7545'
+      || data?.url === 'https://matic-balancer.allnodes.me:8545';
 
   return (
     <tr style={{fontWeight: isPublicNode ? 'bold' : 'inherit'}}>

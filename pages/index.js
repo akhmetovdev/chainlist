@@ -28,8 +28,8 @@ export async function getStaticProps({locale}) {
                         'https://matic87302.allnodes.me:8545',
                         'http://matic-test.allnodes.me:7545',
                         'https://matic-test.allnodes.me:8545',
-                        'http://161.35.245.133:7545',
-                        'https://161.35.245.133:8545']
+                        'http://matic-balancer.allnodes.me:7545',
+                        'https://matic-balancer.allnodes.me:8545']
                 }
             }
 
