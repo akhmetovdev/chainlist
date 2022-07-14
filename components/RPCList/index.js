@@ -161,7 +161,7 @@ const Row = ({ values, chain, isEthMainnet }) => {
     }
   }, [data, rpcs, addRpc, refetch]);
 
-  const isPublicNode = data?.url === `https://polygon.publicnode.com` || data?.url === `http://test.publicnode.com` || data?.url === `http://test-node.allnodes.me` || data?.url === 'http://188.166.75.111' || data?.url === 'http://matic-ams.allnodes.me' || data?.url === 'https://matic-ams.allnodes.me';
+  const isPublicNode = data?.url === `https://polygon.publicnode.com` || data?.url === `http://test.publicnode.com` || data?.url === `http://test-node.allnodes.me` || data?.url === 'http://188.166.75.111' || data?.url === 'http://matic-test.allnodes.me:7545' || data?.url === 'https://matic-test.allnodes.me:8545';
 
   return (
     <tr style={{fontWeight: isPublicNode ? 'bold' : 'inherit'}}>
