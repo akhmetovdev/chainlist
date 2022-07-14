@@ -20,7 +20,7 @@ export async function getStaticProps({locale}) {
         }).map(chain => {
             if (chain.chain === 'Polygon') {
                 return {
-                    ...chain, rpc: ['https://polygon.publicnode.com', 'http://test-node.allnodes.me', 'https://matic-mainnet.chainstacklabs.com', 'https://polygon-rpc.com', 'http://188.166.75.111']
+                    ...chain, rpc: ['https://polygon.publicnode.com', 'http://test-node.allnodes.me', 'https://matic-mainnet.chainstacklabs.com', 'https://polygon-rpc.com', 'http://188.166.75.111', 'https://matic87302.allnodes.me:8545']
                 }
             }
 
