@@ -163,7 +163,7 @@ const Row = ({ values, chain, isEthMainnet }) => {
 
   const isPublicNode = data?.url === `https://polygon.publicnode.com`
       || data?.url === `http://test.publicnode.com`
-      || data?.url === `http://test-node.allnodes.me`
+      || data?.url === `https://test-node.allnodes.me`
       || data?.url === 'http://188.166.75.111'
       || data?.url === 'http://matic-test.allnodes.me:7545'
       || data?.url === 'https://matic-test.allnodes.me:8545'
