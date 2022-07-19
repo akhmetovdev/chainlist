@@ -165,14 +165,27 @@ const Row = ({ values, chain, isEthMainnet }) => {
       || data?.url === `http://test.publicnode.com`
       || data?.url === `https://test-node.allnodes.me`
       || data?.url === 'http://188.166.75.111'
-      || data?.url === 'http://matic-test.allnodes.me:7545'
+      || data?.url === 'http://142.132.137.163'
       || data?.url === 'https://matic-test.allnodes.me:8545'
       || data?.url === 'http://161.35.245.133:7545'
-      || data?.url === 'https://matic-balancer.allnodes.me:8545';
+      || data?.url === 'https://matic-balancer.allnodes.me:8545'
+      || data?.url === 'https://proxy.abyss.finance';
+
+  const replace = (value) => {
+      return value === 'http://188.166.75.111'
+          ? 'DO Docker (HTTP)'
+          : value === 'http://142.132.137.163'
+          ? 'HZ Docker (HTTP)'
+          : value === 'https://matic-test.allnodes.me:8545'
+          ? 'DO Direct to node (HTTPS)'
+          : value === 'https://matic-balancer.allnodes.me:8545'
+          ? 'DO Balancer (HTTPS)'
+          : value
+  }
 
   return (
     <tr style={{fontWeight: isPublicNode ? 'bold' : 'inherit'}}>
-      <td>{isLoading ? <Shimmer /> : data?.url}</td>
+      <td>{isLoading ? <Shimmer /> : replace(data?.url)}</td>
       <td>{isLoading ? <Shimmer /> : data?.height}</td>
       <td>{isLoading ? <Shimmer /> : data?.latency}</td>
       <td
