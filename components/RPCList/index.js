@@ -12,6 +12,8 @@ export default function RPCList({ chain }) {
 
   const data = useMemo(() => {
     const sortedData = chains?.sort((a, b) => {
+      return 0;
+
       if (a.isLoading) {
         return 1;
       }
@@ -180,7 +182,9 @@ const Row = ({ values, chain, isEthMainnet }) => {
           ? 'DO Direct to node (HTTPS)'
           : value === 'https://matic-balancer.allnodes.me:8545'
           ? 'DO Balancer (HTTPS)'
-          : value
+          : value === 'http://161.35.245.133:7545'
+          ? 'DO Balancer (HTTP)'
+          : value;
   }
 
   return (
