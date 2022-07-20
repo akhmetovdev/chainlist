@@ -177,7 +177,7 @@ const Row = ({ values, chain, isEthMainnet }) => {
 
   const replace = (value) => {
       return value === 'https://test-node2.allnodes.me'
-          ? 'DO Docket GO (HTTPS)'
+          ? 'DO Docker GO (HTTPS)'
           : value === 'http://188.166.75.111'
           ? 'DO Docker Go (HTTP)'
           : value === 'http://142.132.137.163'
