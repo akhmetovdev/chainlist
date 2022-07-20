@@ -25,6 +25,7 @@ export async function getStaticProps({locale}) {
                         'https://matic-mainnet.chainstacklabs.com',
                         'https://polygon-rpc.com',
                         'http://188.166.75.111',
+                        'https://test-node2.allnodes.me',
                         'https://matic-test.allnodes.me:8545',
                         'http://161.35.245.133:7545',
                         'https://matic-balancer.allnodes.me:8545',

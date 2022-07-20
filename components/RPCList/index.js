@@ -172,10 +172,13 @@ const Row = ({ values, chain, isEthMainnet }) => {
       || data?.url === 'http://161.35.245.133:7545'
       || data?.url === 'https://matic-balancer.allnodes.me:8545'
       || data?.url === 'https://proxy-direct.allnodes.me:8545'
-      || data?.url === 'https://proxy.abyss.finance';
+      || data?.url === 'https://proxy.abyss.finance'
+      || data?.url === 'https://test-node2.allnodes.me';
 
   const replace = (value) => {
-      return value === 'http://188.166.75.111'
+      return value === 'https://test-node2.allnodes.me'
+          ? 'DO Docket GO (HTTPS)'
+          : value === 'http://188.166.75.111'
           ? 'DO Docker Go (HTTP)'
           : value === 'http://142.132.137.163'
           ? 'HZ Docker (HTTP)'
