@@ -176,7 +176,7 @@ const Row = ({ values, chain, isEthMainnet }) => {
 
   const replace = (value) => {
       return value === 'http://188.166.75.111'
-          ? 'DO Docker (HTTP)'
+          ? 'DO Docker Go (HTTP)'
           : value === 'http://142.132.137.163'
           ? 'HZ Docker (HTTP)'
           : value === 'https://matic-test.allnodes.me:8545'
