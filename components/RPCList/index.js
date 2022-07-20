@@ -171,7 +171,8 @@ const Row = ({ values, chain, isEthMainnet }) => {
       || data?.url === 'https://matic-test.allnodes.me:8545'
       || data?.url === 'http://161.35.245.133:7545'
       || data?.url === 'https://matic-balancer.allnodes.me:8545'
-      || data?.url === 'https://proxy-direct.allnodes.me:8545';
+      || data?.url === 'https://proxy-direct.allnodes.me:8545'
+      || data?.url === 'https://proxy.abyss.finance';
 
   const replace = (value) => {
       return value === 'http://188.166.75.111'
