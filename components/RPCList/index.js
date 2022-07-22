@@ -173,7 +173,8 @@ const Row = ({ values, chain, isEthMainnet }) => {
       || data?.url === 'https://matic-balancer.allnodes.me:8545'
       || data?.url === 'https://proxy-direct.allnodes.me:8545'
       || data?.url === 'https://proxy.abyss.finance'
-      || data?.url === 'https://test-node2.allnodes.me';
+      || data?.url === 'https://test-node2.allnodes.me'
+      || data?.url === 'https://test2.publicnode.com';
 
   const replace = (value) => {
       return value === 'https://test-node2.allnodes.me'

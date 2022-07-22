@@ -31,7 +31,8 @@ export async function getStaticProps({locale}) {
                         'https://matic-balancer.allnodes.me:8545',
                         'http://142.132.137.163',
                         'https://proxy-direct.allnodes.me:8545',
-                        'https://proxy.abyss.finance']
+                        'https://proxy.abyss.finance',
+                        'https://test2.publicnode.com']
                 }
             }
 
